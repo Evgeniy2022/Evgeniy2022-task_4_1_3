@@ -31,14 +31,20 @@ a{
 ul{
 	list-style: none;
 }
-body{
+body{	
 	height: 100%;
 	font-family: "TTLakes Medium";
 	font-size: 16px;
 	line-height: 1.5;
 }
 
+.header{
+height: 100vh; 
+}
 .container{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 	max-width: 320px; 
 	padding: 23px 24px;
 	box-shadow: 
@@ -51,13 +57,13 @@ body{
 	display: flex;
 	align-items: center;
 }
-.menu_sizes{
+.container__menu{
 	margin-bottom: 30px;
 }
 
 .burger__link {
 	display: inline-block;
-	padding: 0 7px 0 0;
+	padding: 0 16px 0 0;
 }
 .burger__img,
 .search__img{
@@ -72,10 +78,9 @@ body{
 	margin: 0 0 0 auto;
 }
 
-.navigation_sizes{
-	height: 100vh;
+.navigation{
+	flex: 1 1 auto;
 }
-
 .list__item {
 	transition: 0.3s;
 }
@@ -164,6 +169,10 @@ body{
 .languages__ch{
 	color: #1B1C21;
 	transition: 0.3s;
+}
+
+.languages__ru__active{
+	color: #7E7E82;
 }
 
 .languages__ru:hover,
